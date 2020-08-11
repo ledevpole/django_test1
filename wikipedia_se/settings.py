@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'titre_wiki.apps.TitreWikiConfig',
     'article_wiki.apps.ArticleWikiConfig',
+    'django_elasticsearch_dsl',
 ]
 
 MIDDLEWARE = [
@@ -128,3 +129,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+ELASTICSEARCH_DSL={
+    'default': {
+        'hosts': 'c31150dfec31456aaf20b45f2e141ed6.europe-west4.gcp.elastic-cloud.com:9243'
+    },
+}
