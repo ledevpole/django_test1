@@ -22,6 +22,7 @@ class TitleDocument(Document):
             'article_id',
         ]
 
+@registry.register_document
 class ArticleDocument(Document):
     class Index:
         name = 'articles'
